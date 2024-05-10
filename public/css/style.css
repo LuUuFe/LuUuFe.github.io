@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --color-white: #FFFFFF;
+  --color-yellow: #FFE74D;
+  --color-yellow-rgb: 255, 231, 77;
+  --color-purple: #8C52FD;
+  --color-purple-rgb: 140, 82, 253;
+  --color-black: #000000;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Menu */
+
+/* Buttons Menu */
+
+a.nav-link {
+  transition: all 350ms;
+}
+
+a.nav-link:hover {
+  color: var(--color-white) !important;
+  background-color: var(--color-purple);
+}
+
+button.navbar-toggler {
+  border: none;
+}
+
+i.bi-list {
+  transition: color 350ms;
+}
+
+i.bi-list:hover {
+  color: var(--color-purple) !important;
+}
+
+button.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+button.btn-close:focus {
+  box-shadow: none;
+}
+
+/* Button Theme */
+
+.btn-theme {
+  border: none;
+  transition: all 350ms;
+}
+
+.btn-theme:hover {
+  color: var(--color-purple);
+  transform: rotate(45deg);
+}
+
+/* Welcome */
+
+#welcome button.btn {
+  background-color: var(--color-purple);
+  color: var(--color-white);
+  transition: all 350ms;
+}
+
+#welcome button.btn:hover {
+  background-color: rgba(var(--color-purple-rgb), 0.85);
+  box-shadow: 5px 5px 1px rgba(var(--color-purple-rgb), 0.2);
+}
