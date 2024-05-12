@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,21 +11,27 @@
   <link rel="stylesheet" href="{{ asset('bootstrap-icons/font/bootstrap-icons.min.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
 </head>
+
 <body>
-  
+
   <header>
     <x-menu />
+    <x-welcome />
+    <x-collaborators />
   </header>
 
   <main>
-    <x-welcome />
+    <x-introduction />
+    <x-statistics />
+    <x-early-stage />
   </main>
 
   <footer>
-    
+    <x-footer />
   </footer>
 
   <script src="{{ asset('bootstrap/js/bootstrap.bundle.min.js') }}"></script>
   <script src="{{ asset('js/script.js') }}"></script>
 </body>
+
 </html>
