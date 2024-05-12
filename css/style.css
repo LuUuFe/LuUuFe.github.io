@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --color-white: #FFFFFF;
+  --color-yellow: #FFE74D;
+  --color-yellow-rgb: 255, 231, 77;
+  --color-purple: #8C52FD;
+  --color-purple-rgb: 140, 82, 253;
+  --color-black: #000000;
+  --color-black-rgb: 0, 0, 0;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  background-image: linear-gradient(to top, rgba(var(--color-black-rgb), 0.9) 10%, rgba(var(--color-purple-rgb), 0.5)), url('../img/banner.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+/* Menu */
+
+@media (max-width: 767.98px) {
+  .offcanvas {
+    background: linear-gradient(to bottom, rgba(var(--color-black-rgb), 0.9) 10%, rgba(var(--color-purple-rgb), 0.5));
+  }
+}
+
+/* Buttons Menu */
+
+a.nav-link {
+  transition: all 350ms;
+}
+
+a.nav-link:hover {
+  transform: translateY(2px);
+}
+
+i.bi-list {
+  transition: color 350ms;
+}
+
+i.bi-list:hover {
+  text-shadow: 0 0 5px var(--color-white);
+}
+
+button.navbar-toggler {
+  border: none;
+}
+
+button.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+button#btn-close {
+  border: none;
+  transition: all 350ms;
+}
+
+button#btn-close:hover {
+  transform: rotate(60deg);
+}
+
+button.btn-close:focus {
+  box-shadow: none;
+}
+
+button.sign-up {
+  background: linear-gradient(to top, rgba(var(--color-purple-rgb), 0.7), rgba(var(--color-purple-rgb), 0.5));
+}
+
+.form button.btn {
+  transition: all 350ms;
+  border: none;
+}
+
+.form button.btn:hover {
+  text-shadow: 0 0 5px var(--color-white);
+}
+
+/* Welcome */
+
+#welcome button.btn {
+  background-color: var(--color-purple);
+  color: var(--color-white);
+  transition: all 350ms;
+}
+
+#welcome button.btn:hover {
+  background-color: rgba(var(--color-purple-rgb), 0.85);
+  box-shadow: 5px 5px 1px rgba(var(--color-purple-rgb), 0.2);
+}
+
+/* Collaborators */
+
+#collaborators img {
+  filter: grayscale(100%);
+  opacity: 0.15;
+}
+
+/* Introduction */
+
+#introduction button.btn {
+  background-color: var(--color-purple);
+  color: var(--color-white);
+  transition: all 350ms;
+}
+
+#introduction button.btn:hover {
+  background-color: rgba(var(--color-purple-rgb), 0.85);
+  box-shadow: 5px 5px 1px rgba(var(--color-purple-rgb), 0.2);
+}
+
+/* Statistics */
+
+#statistics .card {
+  border-color: var(--color-purple);
+  box-shadow: 0 0 10px rgba(var(--color-purple-rgb), 0.2);
+}
+
+#statistics button.btn {
+  background-color: var(--color-purple);
+  color: var(--color-white);
+  transition: all 350ms;
+}
+
+#statistics button.btn:hover {
+  background-color: rgba(var(--color-purple-rgb), 0.85);
+  box-shadow: 5px 5px 1px rgba(var(--color-purple-rgb), 0.2);
+}
+
+/* Early stage */
+
+#early-stage form {
+  border: 1px solid var(--color-purple);
+  box-shadow: 0 0 10px rgba(var(--color-purple-rgb), 0.2);
+}
+
+#early-stage input.form-control {
+  border: 1px solid var(--color-purple);
+  box-shadow: 0 0 10px rgba(var(--color-purple-rgb), 0.2);
+}
+
+#early-stage .form-floating label {
+  transition: all 350ms;
+}
+
+#early-stage input[type="checkbox"] {
+  border: 1px solid #8C52FD;
+}
+
+#early-stage input[type="checkbox"]:checked {
+  background-color: var(--color-purple);
+  box-shadow: 0 0 5px rgba(var(--color-purple-rgb), 0.7);
+}
+
+#early-stage input[type="checkbox"]:focus {
+  box-shadow: 0 0 5px rgba(var(--color-purple-rgb), 0.7);
+}
+
+#early-stage button.btn {
+  background-color: var(--color-purple);
+  color: var(--color-white);
+  transition: all 350ms;
+}
+
+#early-stage button.btn:hover {
+  background-color: rgba(var(--color-purple-rgb), 0.85);
+  box-shadow: 5px 5px 1px rgba(var(--color-purple-rgb), 0.2);
+}
